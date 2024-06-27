@@ -63,15 +63,11 @@ export default function Sidebar() {
                 btn2Handler: () => setConfirmationModal(null),
               })
             }
-            className={`px-3 py-1 text-sm font-medium border border-transparent rounded-md ${
-              isSidebarVisible
-                ? "text-richblack-300 hover:bg-gray-700 hover:text-white"
-                : "text-white hover:bg-richblack-700 hover:text-richblack-300"
-            }`}
+            className={`px-8 py-2 text-sm font-medium text-richblack-300`}
           >
             <div className="flex items-center gap-x-2">
               <VscSignOut className="text-lg" />
-              <span>{isSidebarVisible ? "Hide Sidebar" : "Show Sidebar"}</span>
+              <span>Logout</span>
             </div>
           </button>
         </div>
@@ -88,7 +84,6 @@ export default function Sidebar() {
     </>
   );
 }
-
 
 
 // import { useState } from "react"
